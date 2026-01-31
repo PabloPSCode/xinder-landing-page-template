@@ -1,0 +1,1219 @@
+import { Address } from "@/components/cards/DeliveryOptionsCard";
+import type { PhotoVisualizerProps } from "@/components/media/PhotoVisualizer";
+import { Product } from "@/components/navigation/Cart/components/CartItem";
+import type { TopMenuProps } from "@/components/navigation/TopMenu";
+import {
+  BellIcon,
+  BookOpenIcon,
+  BrowsersIcon,
+  CameraIcon,
+  ChartLineUpIcon,
+  CompassIcon,
+  CubeIcon,
+  CursorClickIcon,
+  DeviceMobileIcon,
+  FanIcon,
+  FileCssIcon,
+  FileTsIcon,
+  HeadsetIcon,
+  LayoutIcon,
+  LightningIcon,
+  PaintBrushIcon,
+  PlusCircleIcon,
+  SneakerMoveIcon,
+  SquaresFourIcon,
+  TelevisionIcon,
+  TextAaIcon,
+  TextboxIcon,
+} from "@phosphor-icons/react";
+
+export const productCardItemURL =
+  "https://www.kabum.com.br/_next/image?url=https%3A%2F%2Fimages8.kabum.com.br%2Fprodutos%2Ffotos%2F520368%2Fprocessador-amd-ryzen-5-5600gt-3-6-ghz-4-6ghz-max-turbo-cache-4mb-6-nucleos-12-threads-am4-100-100001488box_1708024586_gg.jpg&w=640&q=75";
+
+export const womanAvatarURL = "https://i.pravatar.cc/150?img=5";
+
+export const brazilImage =
+  "https://images.unsplash.com/photo-1619546952812-520e98064a52?q=80&w=871&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D";
+
+export const reactLottieAnimation = {
+  v: "4.6.3",
+  fr: 29.9700012207031,
+  ip: 0,
+  op: 141.000005743048,
+  w: 800,
+  h: 800,
+  nm: "Comp 1",
+  ddd: 0,
+  assets: [],
+  layers: [
+    {
+      ddd: 0,
+      ind: 1,
+      ty: 4,
+      nm: "center_circle",
+      ks: {
+        o: { a: 0, k: 100 },
+        r: { a: 0, k: 0 },
+        p: { a: 0, k: [401, 389, 0] },
+        a: { a: 0, k: [-13.063, -22.86, 0] },
+        s: { a: 0, k: [119.72, 119.72, 100] },
+      },
+      ao: 0,
+      shapes: [
+        {
+          ty: "gr",
+          it: [
+            {
+              d: 1,
+              ty: "el",
+              s: { a: 0, k: [77.344, 77.344] },
+              p: { a: 0, k: [0, 0] },
+              nm: "Ellipse Path 1",
+              mn: "ADBE Vector Shape - Ellipse",
+            },
+            {
+              ty: "st",
+              c: { a: 0, k: [0.898039, 0.223529, 0.207843, 1] },
+              o: { a: 0, k: 100 },
+              w: { a: 0, k: 0 },
+              lc: 1,
+              lj: 1,
+              ml: 4,
+              nm: "Stroke 1",
+              mn: "ADBE Vector Graphic - Stroke",
+            },
+            {
+              ty: "fl",
+              c: { a: 0, k: [0.0196078, 0.6470588, 0.8196078, 1] },
+              o: { a: 0, k: 100 },
+              r: 1,
+              nm: "Fill 1",
+              mn: "ADBE Vector Graphic - Fill",
+            },
+            {
+              ty: "tr",
+              p: { a: 0, k: [-14.328, -25.328], ix: 2 },
+              a: { a: 0, k: [0, 0], ix: 1 },
+              s: {
+                a: 1,
+                k: [
+                  {
+                    i: { x: [0.667, 0.667], y: [1, 1] },
+                    o: { x: [0.333, 0.333], y: [0, 0] },
+                    n: ["0p667_1_0p333_0", "0p667_1_0p333_0"],
+                    t: 24,
+                    s: [0, 0],
+                    e: [160, 160],
+                  },
+                  {
+                    i: { x: [0.667, 0.667], y: [1, 1] },
+                    o: { x: [0.333, 0.333], y: [0, 0] },
+                    n: ["0p667_1_0p333_0", "0p667_1_0p333_0"],
+                    t: 45,
+                    s: [160, 160],
+                    e: [70, 70],
+                  },
+                  {
+                    i: { x: [0.667, 0.667], y: [1, 1] },
+                    o: { x: [0.333, 0.333], y: [0, 0] },
+                    n: ["0p667_1_0p333_0", "0p667_1_0p333_0"],
+                    t: 61,
+                    s: [70, 70],
+                    e: [130, 130],
+                  },
+                  {
+                    i: { x: [0.667, 0.667], y: [1, 1] },
+                    o: { x: [0.333, 0.333], y: [0, 0] },
+                    n: ["0p667_1_0p333_0", "0p667_1_0p333_0"],
+                    t: 73,
+                    s: [130, 130],
+                    e: [80, 80],
+                  },
+                  {
+                    i: { x: [0.667, 0.667], y: [1, 1] },
+                    o: { x: [0.333, 0.333], y: [0, 0] },
+                    n: ["0p667_1_0p333_0", "0p667_1_0p333_0"],
+                    t: 84,
+                    s: [80, 80],
+                    e: [110, 110],
+                  },
+                  {
+                    i: { x: [0.667, 0.667], y: [1, 1] },
+                    o: { x: [0.333, 0.333], y: [0, 0] },
+                    n: ["0p667_1_0p333_0", "0p667_1_0p333_0"],
+                    t: 98,
+                    s: [110, 110],
+                    e: [100, 100],
+                  },
+                  { t: 116.000004724777 },
+                ],
+                ix: 3,
+              },
+              r: { a: 0, k: 0, ix: 6 },
+              o: { a: 0, k: 100, ix: 7 },
+              sk: { a: 0, k: 0, ix: 4 },
+              sa: { a: 0, k: 0, ix: 5 },
+              nm: "Transform",
+            },
+          ],
+          nm: "Ellipse 1",
+          np: 3,
+          cix: 2,
+          ix: 1,
+          mn: "ADBE Vector Group",
+        },
+      ],
+      ip: 0,
+      op: 900.000036657751,
+      st: 0,
+      bm: 0,
+      sr: 1,
+    },
+    {
+      ddd: 0,
+      ind: 2,
+      ty: 4,
+      nm: "circle3",
+      ks: {
+        o: { a: 0, k: 100 },
+        r: { a: 0, k: -120.543 },
+        p: { a: 0, k: [406, 375, 0] },
+        a: { a: 0, k: [0, 0, 0] },
+        s: { a: 0, k: [104.627, 108.478, 100] },
+      },
+      ao: 0,
+      shapes: [
+        {
+          ty: "gr",
+          it: [
+            {
+              d: 1,
+              ty: "el",
+              s: { a: 0, k: [497.445, 195.844] },
+              p: { a: 0, k: [0, 0] },
+              nm: "Ellipse Path 1",
+              mn: "ADBE Vector Shape - Ellipse",
+            },
+            {
+              ty: "tm",
+              s: {
+                a: 1,
+                k: [
+                  {
+                    i: { x: [0.833], y: [1] },
+                    o: { x: [0.333], y: [0] },
+                    n: ["0p833_1_0p333_0"],
+                    t: 64,
+                    s: [100],
+                    e: [0],
+                  },
+                  { t: 110.000004480392 },
+                ],
+                ix: 1,
+              },
+              e: {
+                a: 1,
+                k: [
+                  {
+                    i: { x: [0.833], y: [0.833] },
+                    o: { x: [0.333], y: [0.333] },
+                    n: ["0p833_0p833_0p333_0p333"],
+                    t: 64,
+                    s: [100],
+                    e: [100],
+                  },
+                  { t: 110.000004480392 },
+                ],
+                ix: 2,
+              },
+              o: {
+                a: 1,
+                k: [
+                  {
+                    i: { x: [0.69], y: [3.268] },
+                    o: { x: [0.294], y: [0] },
+                    n: ["0p69_3p268_0p294_0"],
+                    t: 64,
+                    s: [1886.781],
+                    e: [1765.781],
+                  },
+                  { t: 115.000004684046 },
+                ],
+                ix: 3,
+              },
+              m: 1,
+              ix: 2,
+              nm: "Trim Paths 1",
+              mn: "ADBE Vector Filter - Trim",
+            },
+            {
+              ty: "st",
+              c: { a: 0, k: [0.0196078, 0.6470588, 0.8196078, 1] },
+              o: { a: 0, k: 100 },
+              w: {
+                a: 1,
+                k: [
+                  {
+                    i: { x: [0.667], y: [0.936] },
+                    o: { x: [0.333], y: [0] },
+                    n: ["0p667_0p936_0p333_0"],
+                    t: 55,
+                    s: [0],
+                    e: [23.039],
+                  },
+                  {
+                    i: { x: [0.667], y: [1.13] },
+                    o: { x: [0.333], y: [-0.043] },
+                    n: ["0p667_1p13_0p333_-0p043"],
+                    t: 74,
+                    s: [23.039],
+                    e: [3],
+                  },
+                  {
+                    i: { x: [0.667], y: [1] },
+                    o: { x: [0.333], y: [0.158] },
+                    n: ["0p667_1_0p333_0p158"],
+                    t: 85,
+                    s: [3],
+                    e: [24],
+                  },
+                  { t: 99.0000040323527 },
+                ],
+              },
+              lc: 2,
+              lj: 2,
+              nm: "Stroke 1",
+              mn: "ADBE Vector Graphic - Stroke",
+            },
+            {
+              ty: "tr",
+              p: { a: 0, k: [-6.277, -10.078], ix: 2 },
+              a: { a: 0, k: [0, 0], ix: 1 },
+              s: { a: 0, k: [89.823, 86.077], ix: 3 },
+              r: { a: 0, k: 0, ix: 6 },
+              o: { a: 0, k: 100, ix: 7 },
+              sk: { a: 0, k: 0, ix: 4 },
+              sa: { a: 0, k: 0, ix: 5 },
+              nm: "Transform",
+            },
+          ],
+          nm: "Ellipse 1",
+          np: 3,
+          cix: 2,
+          ix: 1,
+          mn: "ADBE Vector Group",
+        },
+      ],
+      ip: 0,
+      op: 900.000036657751,
+      st: 0,
+      bm: 0,
+      sr: 1,
+    },
+    {
+      ddd: 0,
+      ind: 3,
+      ty: 4,
+      nm: "circle2",
+      ks: {
+        o: { a: 0, k: 100 },
+        r: { a: 0, k: -59.94 },
+        p: { a: 0, k: [413, 385, 0] },
+        a: { a: 0, k: [0, 0, 0] },
+        s: { a: 0, k: [104.627, 108.478, 100] },
+      },
+      ao: 0,
+      shapes: [
+        {
+          ty: "gr",
+          it: [
+            {
+              d: 1,
+              ty: "el",
+              s: { a: 0, k: [497.445, 195.844] },
+              p: { a: 0, k: [0, 0] },
+              nm: "Ellipse Path 1",
+              mn: "ADBE Vector Shape - Ellipse",
+            },
+            {
+              ty: "tm",
+              s: {
+                a: 1,
+                k: [
+                  {
+                    i: { x: [0.667], y: [1] },
+                    o: { x: [0.333], y: [0] },
+                    n: ["0p667_1_0p333_0"],
+                    t: 46,
+                    s: [100],
+                    e: [84.162],
+                  },
+                  {
+                    i: { x: [0.833], y: [1] },
+                    o: { x: [0.333], y: [-0.084] },
+                    n: ["0p833_1_0p333_-0p084"],
+                    t: 73,
+                    s: [84.162],
+                    e: [100],
+                  },
+                  { t: 104.000004236007 },
+                ],
+                ix: 1,
+              },
+              e: {
+                a: 1,
+                k: [
+                  {
+                    i: { x: [0.833], y: [1] },
+                    o: { x: [0.324], y: [0] },
+                    n: ["0p833_1_0p324_0"],
+                    t: 46,
+                    s: [100],
+                    e: [0],
+                  },
+                  { t: 104.000004236007 },
+                ],
+                ix: 2,
+              },
+              o: {
+                a: 1,
+                k: [
+                  {
+                    i: { x: [0.667], y: [0.953] },
+                    o: { x: [0.327], y: [0] },
+                    n: ["0p667_0p953_0p327_0"],
+                    t: 46,
+                    s: [50],
+                    e: [2101.915],
+                  },
+                  { t: 105.000004276738 },
+                ],
+                ix: 3,
+              },
+              m: 1,
+              ix: 2,
+              nm: "Trim Paths 1",
+              mn: "ADBE Vector Filter - Trim",
+            },
+            {
+              ty: "st",
+              c: { a: 0, k: [0.0196078, 0.6470588, 0.8196078, 1] },
+              o: { a: 0, k: 100 },
+              w: {
+                a: 1,
+                k: [
+                  {
+                    i: { x: [0.667], y: [0.91] },
+                    o: { x: [0.333], y: [0] },
+                    n: ["0p667_0p91_0p333_0"],
+                    t: 60,
+                    s: [0],
+                    e: [13],
+                  },
+                  {
+                    i: { x: [0.667], y: [1.258] },
+                    o: { x: [0.333], y: [-0.085] },
+                    n: ["0p667_1p258_0p333_-0p085"],
+                    t: 75,
+                    s: [13],
+                    e: [2],
+                  },
+                  {
+                    i: { x: [0.667], y: [1] },
+                    o: { x: [0.333], y: [0.183] },
+                    n: ["0p667_1_0p333_0p183"],
+                    t: 87,
+                    s: [2],
+                    e: [24],
+                  },
+                  { t: 104.000004236007 },
+                ],
+              },
+              lc: 2,
+              lj: 2,
+              nm: "Stroke 1",
+              mn: "ADBE Vector Graphic - Stroke",
+            },
+            {
+              ty: "tr",
+              p: { a: 0, k: [-7.277, -10.078], ix: 2 },
+              a: { a: 0, k: [0, 0], ix: 1 },
+              s: { a: 0, k: [89.823, 86.077], ix: 3 },
+              r: { a: 0, k: 0, ix: 6 },
+              o: { a: 0, k: 100, ix: 7 },
+              sk: { a: 0, k: 0, ix: 4 },
+              sa: { a: 0, k: 0, ix: 5 },
+              nm: "Transform",
+            },
+          ],
+          nm: "Ellipse 1",
+          np: 3,
+          cix: 2,
+          ix: 1,
+          mn: "ADBE Vector Group",
+        },
+      ],
+      ip: 0,
+      op: 900.000036657751,
+      st: 0,
+      bm: 0,
+      sr: 1,
+    },
+    {
+      ddd: 0,
+      ind: 4,
+      ty: 4,
+      nm: "circle1",
+      ks: {
+        o: { a: 0, k: 100 },
+        r: { a: 0, k: 0 },
+        p: { a: 0, k: [407, 397, 0] },
+        a: { a: 0, k: [0, 0, 0] },
+        s: { a: 0, k: [104.627, 108.478, 100] },
+      },
+      ao: 0,
+      shapes: [
+        {
+          ty: "gr",
+          it: [
+            {
+              d: 1,
+              ty: "el",
+              s: { a: 0, k: [497.445, 195.844] },
+              p: { a: 0, k: [0, 0] },
+              nm: "Ellipse Path 1",
+              mn: "ADBE Vector Shape - Ellipse",
+            },
+            {
+              ty: "tm",
+              s: {
+                a: 1,
+                k: [
+                  {
+                    i: { x: [0.833], y: [0.833] },
+                    o: { x: [0.167], y: [0.167] },
+                    n: ["0p833_0p833_0p167_0p167"],
+                    t: 0,
+                    s: [100],
+                    e: [100],
+                  },
+                  {
+                    i: { x: [0.667], y: [1] },
+                    o: { x: [0.333], y: [0] },
+                    n: ["0p667_1_0p333_0"],
+                    t: 53,
+                    s: [100],
+                    e: [55.162],
+                  },
+                  {
+                    i: { x: [0.833], y: [1] },
+                    o: { x: [0.333], y: [0.01] },
+                    n: ["0p833_1_0p333_0p01"],
+                    t: 92,
+                    s: [55.162],
+                    e: [0],
+                  },
+                  { t: 105.000004276738 },
+                ],
+                ix: 1,
+              },
+              e: {
+                a: 1,
+                k: [
+                  {
+                    i: { x: [0.833], y: [0.833] },
+                    o: { x: [0.167], y: [0.167] },
+                    n: ["0p833_0p833_0p167_0p167"],
+                    t: 0,
+                    s: [100],
+                    e: [100],
+                  },
+                  {
+                    i: { x: [0.833], y: [0.833] },
+                    o: { x: [0.333], y: [0.333] },
+                    n: ["0p833_0p833_0p333_0p333"],
+                    t: 53,
+                    s: [100],
+                    e: [100],
+                  },
+                  { t: 103.000004195276 },
+                ],
+                ix: 2,
+              },
+              o: {
+                a: 1,
+                k: [
+                  {
+                    i: { x: [0.833], y: [1] },
+                    o: { x: [0.167], y: [0.167] },
+                    n: ["0p833_1_0p167_0p167"],
+                    t: 0,
+                    s: [100],
+                    e: [50],
+                  },
+                  {
+                    i: { x: [0.714], y: [0.721] },
+                    o: { x: [0.303], y: [0] },
+                    n: ["0p714_0p721_0p303_0"],
+                    t: 53,
+                    s: [50],
+                    e: [958.781],
+                  },
+                  { t: 104.000004236007 },
+                ],
+                ix: 3,
+              },
+              m: 1,
+              ix: 2,
+              nm: "Trim Paths 1",
+              mn: "ADBE Vector Filter - Trim",
+            },
+            {
+              ty: "st",
+              c: { a: 0, k: [0.0196078, 0.6470588, 0.8196078, 1] },
+              o: { a: 0, k: 100 },
+              w: {
+                a: 1,
+                k: [
+                  {
+                    i: { x: [0.667], y: [0.908] },
+                    o: { x: [0.333], y: [0] },
+                    n: ["0p667_0p908_0p333_0"],
+                    t: 52,
+                    s: [0],
+                    e: [16.039],
+                  },
+                  {
+                    i: { x: [0.667], y: [1.259] },
+                    o: { x: [0.333], y: [-0.085] },
+                    n: ["0p667_1p259_0p333_-0p085"],
+                    t: 71,
+                    s: [16.039],
+                    e: [6],
+                  },
+                  {
+                    i: { x: [0.667], y: [1] },
+                    o: { x: [0.333], y: [0.184] },
+                    n: ["0p667_1_0p333_0p184"],
+                    t: 82,
+                    s: [6],
+                    e: [24],
+                  },
+                  { t: 96.0000039101602 },
+                ],
+              },
+              lc: 2,
+              lj: 2,
+              nm: "Stroke 1",
+              mn: "ADBE Vector Graphic - Stroke",
+            },
+            {
+              ty: "tr",
+              p: { a: 0, k: [-7.277, -10.078], ix: 2 },
+              a: { a: 0, k: [0, 0], ix: 1 },
+              s: { a: 0, k: [89.823, 86.077], ix: 3 },
+              r: { a: 0, k: 0, ix: 6 },
+              o: { a: 0, k: 100, ix: 7 },
+              sk: { a: 0, k: 0, ix: 4 },
+              sa: { a: 0, k: 0, ix: 5 },
+              nm: "Transform",
+            },
+          ],
+          nm: "Ellipse 1",
+          np: 3,
+          cix: 2,
+          ix: 1,
+          mn: "ADBE Vector Group",
+        },
+      ],
+      ip: 0,
+      op: 900.000036657751,
+      st: 0,
+      bm: 0,
+      sr: 1,
+    },
+  ],
+};
+
+export const avatarImagePlaceholder = "https://i.pravatar.cc/120";
+
+export const productsCardsSwiper = [
+  {
+    id: 1,
+    title: "Processador AMD Ryzen 7 7800X3D, 5.0GHz Max Turbo, Cache 104MB, AM5, 8 Núcleos",
+    image:
+      "https://images2.kabum.com.br/produtos/fotos/426262/processador-amd-ryzen-7-7800x3d-5-0ghz-max-turbo-cache-104mb-am5-8-nucleos-video-integrado-100-100000910wof_1680784502_gg.jpg",
+    price: 1799.9,
+    oldPrice: 999.9,
+    discount: 20,
+  },
+  {
+    id: 2,
+    title: "Processador Intel Core i9 12900K",
+    image:
+      "https://www.kabum.com.br/_next/image?url=https%3A%2F%2Fimages8.kabum.com.br%2Fprodutos%2Ffotos%2F520368%2Fprocessador-amd-ryzen-5-5600gt-3-6-ghz-4-6ghz-max-turbo-cache-4mb-6-nucleos-12-threads-am4-100-100001488box_1708024586_gg.jpg&w=640&q=75",
+    price: 699.9,
+    oldPrice: 899.9,
+    discount: 20,
+  },
+  {
+    id: 3,
+    title: "Processador Intel Core i7 12700K",
+    image:
+      "https://www.kabum.com.br/_next/image?url=https%3A%2F%2Fimages8.kabum.com.br%2Fprodutos%2Ffotos%2F520368%2Fprocessador-amd-ryzen-5-5600gt-3-6-ghz-4-6ghz-max-turbo-cache-4mb-6-nucleos-12-threads-am4-100-100001488box_1708024586_gg.jpg&w=640&q=75",
+    price: 599.9,
+    oldPrice: 799.9,
+    discount: 20,
+  },
+  {
+    id: 4,
+    title: "Processador Intel Core i5 12600K",
+    image:
+      "https://www.kabum.com.br/_next/image?url=https%3A%2F%2Fimages8.kabum.com.br%2Fprodutos%2Ffotos%2F520368%2Fprocessador-amd-ryzen-5-5600gt-3-6-ghz-4-6ghz-max-turbo-cache-4mb-6-nucleos-12-threads-am4-100-100001488box_1708024586_gg.jpg&w=640&q=75",
+    price: 499.9,
+    oldPrice: 699.9,
+    discount: 20,
+  },
+  {
+    id: 5,
+    title: "Processador Intel Core i3 12100F",
+    image:
+      "https://www.kabum.com.br/_next/image?url=https%3A%2F%2Fimages8.kabum.com.br%2Fprodutos%2Ffotos%2F520368%2Fprocessador-amd-ryzen-5-5600gt-3-6-ghz-4-6ghz-max-turbo-cache-4mb-6-nucleos-12-threads-am4-100-100001488box_1708024586_gg.jpg&w=640&q=75",
+    price: 399.9,
+    oldPrice: 599.9,
+    discount: 20,
+  },
+  {
+    id: 6,
+    title: "Processador AMD Ryzen 7 5800X",
+    image:
+      "https://www.kabum.com.br/_next/image?url=https%3A%2F%2Fimages8.kabum.com.br%2Fprodutos%2Ffotos%2F520368%2Fprocessador-amd-ryzen-5-5600gt-3-6-ghz-4-6ghz-max-turbo-cache-4mb-6-nucleos-12-threads-am4-100-100001488box_1708024586_gg.jpg&w=640&q=75",
+    price: 899.9,
+    oldPrice: 1099.9,
+    discount: 20,
+  },
+  {
+    id: 7,
+    title: "Processador AMD Ryzen 9 5900X",
+    image:
+      "https://www.kabum.com.br/_next/image?url=https%3A%2F%2Fimages8.kabum.com.br%2Fprodutos%2Ffotos%2F520368%2Fprocessador-amd-ryzen-5-5600gt-3-6-ghz-4-6ghz-max-turbo-cache-4mb-6-nucleos-12-threads-am4-100-100001488box_1708024586_gg.jpg&w=640&q=75",
+    price: 1199.9,
+    oldPrice: 1399.9,
+    discount: 20,
+  },
+  {
+    id: 8,
+    title: "Processador AMD Ryzen 5 5600X",
+    image:
+      "https://www.kabum.com.br/_next/image?url=https%3A%2F%2Fimages8.kabum.com.br%2Fprodutos%2Ffotos%2F520368%2Fprocessador-amd-ryzen-5-5600gt-3-6-ghz-4-6ghz-max-turbo-cache-4mb-6-nucleos-12-threads-am4-100-100001488box_1708024586_gg.jpg&w=640&q=75",
+    price: 499.9,
+    oldPrice: 699.9,
+    discount: 20,
+  },
+];
+
+export const brandImages = [
+  {
+    src: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/XBOX_logo_2012.svg/1200px-XBOX_logo_2012.svg.png",
+    alt: "xbox",
+  },
+  {
+    src: "https://1000logos.net/wp-content/uploads/2017/02/Apple-Logosu.png",
+    alt: "apple",
+  },
+  {
+    src: "https://www.carlogos.org/logo/Chevrolet-logo-2013-2560x1440.png",
+    alt: "chevrolet",
+  },
+  {
+    src: "https://logodownload.org/wp-content/uploads/2014/10/youtube-logo-0.png",
+    alt: "youtube",
+  },
+  {
+    src: "https://upload.wikimedia.org/wikipedia/pt/thumb/1/1f/Nestl%C3%A9_logo.svg/2560px-Nestl%C3%A9_logo.svg.png",
+    alt: "nestle",
+  },
+  {
+    src: "https://images.seeklogo.com/logo-png/16/2/adidas-logo-png_seeklogo-168370.png",
+    alt: "adidas",
+  },
+];
+
+export const demoImage = {
+  name: "landscape.jpg",
+  uri: "https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=1200&q=80",
+  size: 820, // KB
+  type: "image/jpeg",
+};
+
+export const demoVideo = {
+  name: "promo.mp4",
+  uri: "https://www.w3schools.com/html/mov_bbb.mp4",
+  size: 51200, // KB
+  type: "video/mp4",
+};
+
+export const demoPdf = {
+  name: "contract.pdf",
+  uri: "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
+  size: 2048, // KB
+  type: "application/pdf",
+};
+
+export const mockedPaginationList = (count: number) =>
+  Array.from({ length: count }, (_, i) => (
+    <div
+      key={i}
+      className="w-full rounded-md border border-foreground/15 bg-background text-foreground px-3 py-2 text-xs sm:text-sm"
+    >
+      Item #{i + 1}
+    </div>
+  ));
+
+export const TABLE_DATA = Array.from({ length: 57 }).map((_, i) => {
+  const quantity = (i % 5) + 1;
+  const price = 49.9 + (i % 7) * 10;
+  return {
+    id: i + 1,
+    customer: `Cliente ${i + 1}`,
+    product: ["Fone", "Teclado", "Mouse", "Monitor", "Cabo"][i % 5],
+    quantity,
+    price,
+    total: quantity * price,
+    createdAt: `0${(i % 9) + 1}/0${(i % 8) + 1}/2025`, // “DD/MM/YYYY”
+  };
+});
+
+export const topMenuItems: TopMenuProps["menuItems"] = [
+  {
+    label: "Ofertas do dia",
+    href: "#ofertas",
+    icon: <LightningIcon size={18} />,
+    subItems: [
+      { label: "Promoções relâmpago", href: "#flash" },
+      { label: "Cupons", href: "#cupons" },
+      { label: "Outlet", href: "#outlet" },
+    ],
+  },
+  {
+    label: "Celulares",
+    href: "#celulares",
+    icon: <DeviceMobileIcon size={18} />,
+    subItems: [
+      { label: "Smartphones", href: "#smartphones" },
+      { label: "Acessórios", href: "#acessorios" },
+      { label: "iPhone", href: "#iphone" },
+      { label: "Android", href: "#android" },
+    ],
+  },
+  {
+    label: "TV e Vídeo",
+    href: "#tv",
+    icon: <TelevisionIcon size={18} />,
+    subItems: [
+      { label: "Smart TVs", href: "#smart-tvs" },
+      { label: "Soundbars", href: "#soundbars" },
+      { label: "Projetores", href: "#projetores" },
+    ],
+  },
+  {
+    label: "Eletrodomésticos",
+    href: "#eletro",
+    icon: <FanIcon size={18} />,
+    subItems: [
+      { label: "Geladeiras", href: "#geladeiras" },
+      { label: "Lava e seca", href: "#lavaeseca" },
+      { label: "Micro-ondas", href: "#microondas" },
+    ],
+  },
+];
+
+export const samplePhotos: PhotoVisualizerProps["photos"] = [
+  {
+    src: "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=900&q=60",
+    alt: "Montanhas ao amanhecer",
+  },
+  {
+    src: "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?auto=format&fit=crop&w=900&q=60",
+    alt: "Retrato em luz natural",
+  },
+  {
+    src: "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=900&q=60",
+    alt: "Mesa com laptop e café",
+  },
+  {
+    src: "https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=900&q=60",
+    alt: "Trilho no campo",
+  },
+  {
+    src: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=900&q=60",
+    alt: "Praia ao pôr do sol",
+  },
+  {
+    src: "https://images.unsplash.com/photo-1482192596544-9eb780fc7f66?auto=format&fit=crop&w=900&q=60",
+    alt: "Código na tela",
+  },
+];
+
+export const mockedProducts: Product[] = [
+  {
+    id: "1",
+    name: "Produto A Lorem ipsum is simply dummy text of the printing and typesetting industry.",
+    price: 29.99,
+    quantity: 1,
+    imageUrl:
+      "https://images.unsplash.com/photo-1589578228447-e1a4e481c6c8?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGtleWJvYXJkfGVufDB8fDB8fHww",
+  },
+  {
+    id: "2",
+    name: "Produto B",
+    price: 49.99,
+    quantity: 2,
+    imageUrl:
+      "https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bW91c2V8ZW58MHx8MHx8fDA%3D",
+  },
+  {
+    id: "3",
+    name: "Produto C",
+    price: 19.99,
+    quantity: 1,
+    imageUrl:
+      "https://images.unsplash.com/photo-1591488320449-011701bb6704?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  },
+  {
+    id: "4",
+    name: "Produto D",
+    price: 99.99,
+    quantity: 1,
+    imageUrl:
+      "https://images.unsplash.com/photo-1669480380758-4b163a33f6f9?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  },
+  {
+    id: "5",
+    name: "Produto E",
+    price: 9.99,
+    quantity: 5,
+    imageUrl:
+      "https://images.unsplash.com/photo-1591799264318-7e6ef8ddb7ea?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  },
+  {
+    id: "6",
+    name: "Produto E",
+    price: 9.99,
+    quantity: 5,
+    imageUrl:
+      "https://images.unsplash.com/photo-1591799264318-7e6ef8ddb7ea?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  },
+  {
+    id: "7",
+    name: "Produto E",
+    price: 9.99,
+    quantity: 5,
+    imageUrl:
+      "https://images.unsplash.com/photo-1591799264318-7e6ef8ddb7ea?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  },
+];
+
+export const mockedProductDetails = [
+  {
+    id: "1",
+    name: "Processador Ryzen 5 5600G",
+    description:
+      "Processador AMD Ryzen 5 5600G com 6 núcleos e 12 threads, frequência base de 3.6 GHz e turbo de até 4.6 GHz. Ideal para jogos e multitarefas.",
+    price: 799.9,
+    oldPrice: 999.9,
+    discount: 20,
+    photos: [
+      {
+        src: "https://www.kabum.com.br/_next/image?url=https%3A%2F%2Fimages8.kabum.com.br%2Fprodutos%2Ffotos%2F520368%2Fprocessador-amd-ryzen-5-5600gt-3-6-ghz-4-6ghz-max-turbo-cache-4mb-6-nucleos-12-threads-am4-100-100001488box_1708024586_gg.jpg&w=640&q=75",
+      },
+      {
+        src: "https://www.kabum.com.br/_next/image?url=https%3A%2F%2Fimages8.kabum.com.br%2Fprodutos%2Ffotos%2F520368%2Fprocessador-amd-ryzen-5-5600gt-3-6-ghz-4-6ghz-max-turbo-cache-4mb-6-nucleos-12-threads-am4-100-100001488box_1708024586_gg.jpg&w=640&q=75",
+      },
+    ],
+  },
+];
+
+export const mockedDeliveryOptions = [
+  {
+    id: "1",
+    label: "Mototáxi",
+    deliveryEstimate: "30-40 minutos",
+    price: 9.99,
+  },
+  {
+    id: "2",
+    label: "Retirar na loja",
+    deliveryEstimate: "Diponível em até 1 hora",
+    price: 0,
+  },
+];
+
+export const mockedAddresses: Address[] = [
+  {
+    id: "1",
+    label: "Casa",
+    address: "Rua das Flores",
+    residenceNumber: "123",
+    neighborhood: "Jardim Primavera",
+    city: "São Paulo",
+    state: "SP",
+    zipCode: "01234-567",
+    country: "Brasil",
+  },
+  {
+    id: "2",
+    label: "Trabalho",
+    address: "Avenida Central",
+    residenceNumber: "456",
+    neighborhood: "Centro",
+    city: "Rio de Janeiro",
+    state: "RJ",
+    zipCode: "76543-210",
+    country: "Brasil",
+  },
+];
+
+export const menuItems = [
+  {
+    label: "Recursos",
+    href: "#recursos",
+  },
+  {
+    label: "Componentes",
+    href: "#componentes",
+  },
+  {
+    label: "Documentação",
+    href: "https://docs.reactultimate.pablosilvadev.com.br",
+    target: "_blank",
+  },
+  {
+    label: "Cases de sucesso",
+    href: "#cases",
+  },
+  {
+    label: "Já possuo licença",
+    href: "/ja-sou-cliente",
+  },
+];
+
+export const features = [
+  {
+    id: "1",
+    title: "Mais de 130 componentes",
+    description:
+      "Componentes extremamente versáteis e personalizáveis para todas as suas necessidades. Construa qualquer interface com uma facilidade absurda.",
+    icon: <CubeIcon size={32} className="text-primary-500" />,
+  },
+  {
+    id: "2",
+    title: "Totalmente personalizável",
+    description:
+      "Altere cores, fontes, espaçamentos e muito mais com poucas linhas de código. Adapte a biblioteca ao seu design system ou crie o seu próprio do zero.",
+    icon: <PaintBrushIcon size={32} className="text-primary-500" />,
+  },
+  {
+    id: "3",
+    title: "Tailwind CSS",
+    description:
+      "Construído com Tailwind CSS, aproveite a flexibilidade e poder dessa incrível ferramenta para criar interfaces modernas e responsivas com facilidade.",
+    icon: <FileCssIcon size={32} className="text-primary-500" />,
+  },
+  {
+    id: "4",
+    title: "Construída com Typescript",
+    description:
+      "Desfrute dos benefícios do Typescript, como tipagem estática e autocompletar, para aumentar sua produtividade e reduzir erros durante o desenvolvimento.",
+    icon: <FileTsIcon size={32} className="text-primary-500" />,
+  },
+
+  {
+    id: "6",
+    title: "Documentação completa",
+    description:
+      "Acesse uma documentação detalhada com exemplos práticos, guias de uso e melhores práticas para tirar o máximo proveito da biblioteca em seus projetos.",
+    icon: <BookOpenIcon size={32} className="text-primary-500" />,
+  },
+  {
+    id: "6",
+    title: "Suporte e atualizações",
+    description:
+      "Conte com atualizações constantes, melhorias e suporte dedicado para garantir que sua experiência com a biblioteca seja sempre a melhor possível.",
+    icon: <HeadsetIcon size={32} className="text-primary-500" />,
+  },
+];
+
+export const componentCategories = [
+  {
+    id: "1",
+    title: "Componentes de Ecommerce",
+    description:
+      "Carrinhos de compra, listas de produtos, resumo de ordens e muito mais.",
+    icon: <CursorClickIcon size={32} className="text-blue-500" />,
+  },
+  {
+    id: "2",
+    title: "Formulários e inputs",
+    description: "Campos de texto, selects, uploads e com validações.",
+    icon: <TextboxIcon size={32} className="text-red-500" />,
+  },
+  {
+    id: "3",
+    title: "Navegação",
+    description:
+      "Menus, breadcrumbs, abas e sidebars que guiam o usuário sem fricção.",
+    icon: <CompassIcon size={32} className="text-pink-500" />,
+  },
+  {
+    id: "4",
+    title: "Cards e listagens",
+    description:
+      "Cards responsivos, listas e grids para apresentar produtos, posts ou dados.",
+    icon: <SquaresFourIcon size={32} className="text-orange-500" />,
+  },
+  {
+    id: "5",
+    title: "Dados e gráficos",
+    description:
+      "Tabelas, métricas e componentes visuais que deixam dashboards legíveis.",
+    icon: <ChartLineUpIcon size={32} className="text-sky-500" />,
+  },
+  {
+    id: "6",
+    title: "Media",
+    description:
+      "Visualizadores de imagens, vídeos e galerias com controles intuitivos.",
+    icon: <CameraIcon size={32} className="text-gray-500" />,
+  },
+  {
+    id: "7",
+    title: "Modais e overlays",
+    description:
+      "Modais e popovers com animações suaves e acessibilidade garantida.",
+    icon: <BrowsersIcon size={32} className="text-teal-500" />,
+  },
+  {
+    id: "8",
+    title: "Animações e efeitos",
+    description:
+      "Containers animados, spinners e mais para melhorar a experiência do usuário.",
+    icon: <SneakerMoveIcon size={32} className="text-sky-500" />,
+  },
+  {
+    id: "9",
+    title: "Tipografia e textos",
+    description:
+      "Títulos, parágrafos, e elementos textuais para uma comunicação clara e eficaz.",
+    icon: <TextAaIcon size={32} className="text-amber-500" />,
+  },
+  {
+    id: "10",
+    title: "Indicadores e status",
+    description:
+      "Indicadores de progresso, badges e alertas para manter o usuário informado.",
+    icon: <BellIcon size={32} className="text-yellow-500" />,
+  },
+  {
+    id: "11",
+    title: "Elementos de layout",
+    description:
+      "Headers, footers, sections e outros componentes para estruturar suas páginas.",
+    icon: <LayoutIcon size={32} className="text-orange-500" />,
+  },
+  {
+    id: "12",
+    title: "E muito mais",
+    description:
+      "Timeline, banners, carrosséis, rich text editor, componentes para blogs e vários outros componentes.",
+    icon: <PlusCircleIcon size={32} className="text-primary-500" />,
+  },
+];
+
+export const testimonials = [
+  {
+    id: 1,
+    subtitle:
+      "Me surpreendi com a qualidade e a rapidez em que montei minhas telas. Utilizando IA então foi ainda mais fácil e rápido. Recomendo demais!",
+    title: "Bruno Veloso",
+    rating: 5,
+    avatarUrl: "/profiles/profile1.png",
+  },
+  {
+    id: 2,
+    subtitle:
+      "Tem componente de sobra nessa biblioteca. Nunca vi uma biblioteca com tantos componentes e como uma qualidade e versatilidade fora do comum. Top...",
+    title: "Leozinho Dev",
+    rating: 5,
+    avatarUrl: "/profiles/profile3.png",
+  },
+  {
+    id: 3,
+    subtitle:
+      "Biblioteca top demais, salvou meu projeto! Ainda mais com pagamento em BRL ao invés de dólar.",
+    title: "Breno Santos",
+    rating: 5,
+    avatarUrl: "/profiles/profile2.png",
+  },
+  {
+    id: 4,
+    subtitle:
+      "Adquiri a React Ultimate PRO para um projeto pessoal e foi a melhor decisão que tomei. A velocidade de desenvolvimento aumentou muito! A integração com o Codex foi surreal.",
+    title: "Ludimila Ferreira",
+    rating: 5,
+    avatarUrl: "/profiles/profile4.png",
+  },
+];
+
+export const faqQuestions = [
+  {
+    id: "1",
+    question: "Como faço para saber se a biblioteca é compatível com o meu projeto?",
+    answer:
+      "A biblioteca é compatível com projetos React 18+, Next.js 13+ (App Router ou Pages Router) e Vite. Se você usa TailwindCSS, a integração é ainda mais simples. Basta verificar se seu ambiente está com Node 18+ ou 20+ e instalar normalmente usando `npm install ./libs/react-ultimate-components`.",
+  },
+  {
+    id: "2",
+    question: "Após a compra, como terei acesso ao download?",
+    answer:
+      "Assim que o pagamento é confirmado, você será redirecionado para a página de sucesso, onde poderá baixar imediatamente a biblioteca. Caso feche a página, pode baixar novamente clicando em “Já possuo licença” e informando seu email.",
+  },
+  {
+    id: "3",
+    question: "O pagamento é processado na hora? Posso usar a biblioteca imediatamente?",
+    answer:
+      "Sim. Para pagamentos por cartão a liberação é imediata. Para Pix e Boleto (quando disponíveis), a liberação normalmente ocorre em poucos minutos após a confirmação do pagamento.",
+  },
+  {
+    id: "4",
+    question:
+      "Fechei a página de download após a compra. Como faço para baixar a biblioteca novamente?",
+    answer:
+      "Você pode acessar a área “Já possuo licença” na landing page e informar seu email. Caso haja uma compra validada vinculada à esse email, você poderá baixar a bilioteca novamente sem custos adicionais.",
+  },
+  {
+    id: "5",
+    question: "A biblioteca recebe atualizações? Terei acesso a elas?",
+    answer:
+      "Sim. Melhorias, correções e novos componentes são disponibilizados periodicamente. Cada compra garante acesso vitalício às atualizações que ocorrerem.",
+  },
+  {
+    id: "6",
+    question: "Posso usar a biblioteca em quantos projetos quiser?",
+    answer:
+      "Sim. A licença permite uso ilimitado em projetos pessoais e comerciais do próprio comprador. O que não é permitido é redistribuir a biblioteca, revendê-la ou disponibilizá-la como open-source.",
+  },
+  {
+    id: "7",
+    question: "Como faço para personalizar as cores, tema e estilos dos componentes?",
+    answer:
+      "Todos os componentes utilizam tokens CSS e variáveis de tema. Basta copiar o conteúdo do arquivo `index.css` para seu CSS global e alterar os valores das variáveis, como `--color-primary-500` ou `--font-primary`. Se usa Tailwind, você pode sobrescrever os tokens diretamente via seu arquivo global de estilos.",
+  },
+  {
+    id: "8",
+    question: "Instalei a biblioteca mas um componente não está funcionando corretamente. O que fazer?",
+    answer:
+      "Verifique se você importou o CSS global da biblioteca corretamente e se todas as dependências externas (como react-imask, react-datepicker, e React 18+) estão instaladas. Caso o problema persista, entre em contato com o suporte técnico enviando detalhes do erro e seu ambiente.",
+  },
+];
+
