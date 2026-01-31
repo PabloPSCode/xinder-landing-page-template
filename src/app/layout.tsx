@@ -17,39 +17,39 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "React Ultimate - Biblioteca de Componentes React",
+  title: "Xinder — Agência de Software",
   description:
-    "Acelere seu desenvolvimento com React Ultimate, a biblioteca definitiva de componentes React para criar interfaces incríveis com facilidade e rapidez.",
+    "A Xinder é uma agência de software especializada em produtos digitais, squads dedicados e soluções sob medida para operações críticas.",
   keywords: [
-    "React Ultimate",
-    "biblioteca de componentes React",
-    "componentes React prontos para uso",
-    "desenvolvimento web",
-    "UI components",
-    "React UI library",
-    "componentes responsivos",
-    "dark mode React",
-    "TypeScript React components",
-    "React design system",
+    "Xinder",
+    "agência de software",
+    "desenvolvimento sob medida",
+    "squads dedicados",
+    "produto digital",
+    "UX/UI",
+    "devops",
+    "aplicativos mobile",
+    "plataforma SaaS",
+    "consultoria tecnológica",
   ],
   authors: [
     {
-      name: "Pablo Silva",
-      url: "https://www.pablosilvadev.com.br",
+      name: "Xinder",
+      url: "https://xinder.dev",
     },
   ],
   openGraph: {
-    title: "React Ultimate - Biblioteca de Componentes React",
+    title: "Xinder — Agência de Software",
     description:
-      "Acelere seu desenvolvimento com React Ultimate, a biblioteca definitiva de componentes React para criar interfaces incríveis com facilidade e rapidez.",
-    url: "https://reactultimate.com.br",
-    siteName: "React Ultimate",
+      "Soluções digitais sob medida com squads de alta performance para acelerar produtos e operações.",
+    url: "https://xinder.dev",
+    siteName: "Xinder",
     images: [
       {
-        url: "https://reactultimate.com.br/og-image.png",
+        url: "/logo.png",
         width: 1200,
         height: 630,
-        alt: "React Ultimate - Biblioteca de Componentes React",
+        alt: "Xinder — Agência de Software",
       },
     ],
     locale: "pt_BR",

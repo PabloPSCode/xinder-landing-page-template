@@ -12,7 +12,7 @@ import {
 } from "@phosphor-icons/react";
 import clsx from "clsx";
 
-type item = {
+export type item = {
   /** Nome do ícone */
   iconName:
     | "instagram"

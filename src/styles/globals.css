@@ -3,17 +3,17 @@
 @import "../styles/phone-overrides.css";
 @custom-variant dark (&:where(.dark, .dark *));
 
-@theme {--color-primary-50:  #f0fdf4;}
-@theme {--color-primary-100: #dcfce7;}
-@theme {--color-primary-200: #bbf7d0;}
-@theme {--color-primary-300: #86efac;}
-@theme {--color-primary-400: #4ade80;}
-@theme {--color-primary-500: #009739;}
-@theme {--color-primary-600: #008131;}
-@theme {--color-primary-700: #006628;}
-@theme {--color-primary-800: #004d1f;}
-@theme {--color-primary-900: #003315;}
-@theme {--color-primary-950: #001a0a;}
+@theme {--color-primary-50:  #fdf2f5;}
+@theme {--color-primary-100: #fbe3ea;}
+@theme {--color-primary-200: #f5c1d1;}
+@theme {--color-primary-300: #ef98b4;}
+@theme {--color-primary-400: #e06b92;}
+@theme {--color-primary-500: #c93a6a;}
+@theme {--color-primary-600: #b12a5a;}
+@theme {--color-primary-700: #8c2048;}
+@theme {--color-primary-800: #6b1836;}
+@theme {--color-primary-900: #4a1025;}
+@theme {--color-primary-950: #2a0815;}
 
 @theme {--color-secondary-50:  #fffdea;}
 @theme {--color-secondary-100: #fef9c3;}
@@ -88,10 +88,10 @@
 @theme {--color-destructive-950: #2b0009;}
 
 @theme {
-  --color-background: #F6F5F7;  /* light mode */
-  --color-foreground: #1F1F1F;  /* light mode */
-  --color-bg-card: #ffffff;  /* light mode */
-  --color-border-card: #ffffff;  /* light mode */
+  --color-background: #F5F4F7;  /* light mode */
+  --color-foreground: #1B1B1F;  /* light mode */
+  --color-bg-card: #FFFFFF;  /* light mode */
+  --color-border-card: #E9E6EE;  /* light mode */
 
     --font-primary: "Montserrat", ui-sans-serif;
 
@@ -122,7 +122,7 @@ html{
 }
 
 h1, h2, h3, h4, h5, h6, button, a {
-  font-family: var(--font-secondary);
+  font-family: var(--font-primary);
 }
 
 button{
@@ -144,4 +144,3 @@ button:disabled{
 @layer utilities {
   .rc-slider-disabled { background-color: var(--color-background) !important;}
 }
-
