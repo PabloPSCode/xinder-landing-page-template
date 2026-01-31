@@ -3,13 +3,7 @@ import FadeContainer from "@/components/animations-and-loading/FadeContainer";
 import MetricsCard from "@/components/cards/MetricsCard";
 import Subtitle from "@/components/typography/Subtitle";
 import Title from "@/components/typography/Title";
-import {
-  CubeIcon,
-  DeviceMobileCameraIcon,
-  PlayCircleIcon,
-  RobotIcon,
-  TableIcon,
-} from "@phosphor-icons/react";
+import { CubeIcon, TableIcon } from "@phosphor-icons/react";
 import { UsersFourIcon } from "@phosphor-icons/react/dist/ssr";
 
 export default function MetricsSection() {
@@ -18,9 +12,7 @@ export default function MetricsSection() {
       preTitle: "+ de",
       title: "componentes disponíveis",
       value: 130,
-      icon: (
-        <CubeIcon className="w-12 h-12 sm:w-16 sm:h-16 text-primary-500" />
-      ),
+      icon: <CubeIcon className="w-12 h-12 sm:w-16 sm:h-16 text-primary-500" />,
     },
     {
       preTitle: "+ de",
@@ -34,7 +26,9 @@ export default function MetricsSection() {
       preTitle: "+ de",
       title: "clientes satisfeitos",
       value: 25,
-      icon: <UsersFourIcon className="w-12 h-12 sm:w-16 sm:h-16 text-primary-500" />,
+      icon: (
+        <UsersFourIcon className="w-12 h-12 sm:w-16 sm:h-16 text-primary-500" />
+      ),
     },
   ];
   return (
@@ -46,7 +40,11 @@ export default function MetricsSection() {
       <Subtitle content="Números que falam por nós." weight="light" />
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-4">
         {metrics.map((metric) => (
-          <FadeContainer key={metric.title} delay={metrics.indexOf(metric) * 2} once> 
+          <FadeContainer
+            key={metric.title}
+            delay={metrics.indexOf(metric) * 2}
+            once
+          >
             <MetricsCard
               preTitle={metric.preTitle}
               key={metric.title}
