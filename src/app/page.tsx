@@ -52,7 +52,7 @@ export default function Home() {
       >
         <LandingHeader.Left className="gap-3">
           <LandingHeader.Logo
-            src="/logo.png"
+            src="/logo.svg"
             alt="Logo da Xinder"
             className="brightness-0 invert"
           />
@@ -186,7 +186,7 @@ export default function Home() {
               className="text-foreground/70"
             />
           </div>
-          <FadeContainer className="w-full">
+          <FadeContainer once className="w-full">
             <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4 w-full">
               {xinderMetrics.map((metric) => (
                 <MetricsCard
@@ -217,7 +217,7 @@ export default function Home() {
                   className="text-foreground/70"
                 />
               </div>
-              <FadeContainer className="w-full">
+              <FadeContainer once className="w-full">
                 <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
                   {xinderExpandingServices.map((service) => (
                     <ItemListCard
@@ -272,7 +272,7 @@ export default function Home() {
                   className="bg-white text-slate-900 hover:bg-white/90"
                 />
               </div>
-              <RevealContainer className="flex justify-center lg:justify-end">
+              <RevealContainer once className="flex justify-center lg:justify-end">
                 <ImageLink
                   imgUrl="https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                   width={720}
@@ -300,7 +300,7 @@ export default function Home() {
           </div>
           <div className="grid gap-6 md:grid-cols-3 w-full">
             {xinderTestimonials.map((testimonial, index) => (
-              <FadeContainer key={testimonial.userName} delay={index * 2}>
+              <FadeContainer once key={testimonial.userName} delay={index * 2}>
                 <TestimonialCard
                   avatarUrl={testimonial.avatarUrl}
                   userName={testimonial.userName}
